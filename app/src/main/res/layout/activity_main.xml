@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nama Aplikasi -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metric Converter"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Nama -->
+    <TextView
+        android:id="@+id/tvDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By: Samuel Untu - 210211060215"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Dropdown Metrik -->
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dari:" />
+
+    <Spinner
+        android:id="@+id/spinnerMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Dropdown Satuan Awal -->
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ke:" />
+
+    <Spinner
+        android:id="@+id/spinnerFromUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+    <!-- Dropdown Satuan Hasil -->
+    <Spinner
+        android:id="@+id/spinnerToUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+    <!-- Input Nilai -->
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan Nilai" />
+
+    <!-- Hasil Konversi -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
