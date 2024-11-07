@@ -1,0 +1,1 @@
+<img src="assets/images/contoh.jpg" alt="Gambar contoh" width="300" />
